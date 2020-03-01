@@ -17,15 +17,19 @@
     </ul>
   </nav>
 
-  <h1>Projeto Seletivo Future4</h1>
+  <h1 id = "titulo_site">Projeto Seletivo Future4</h1>
 
   <img src="future4.jpg">
   <p>Turma Web Full Stack.</p>
 
   <footer>
 
-    <input type="email" placeholder="Coloque seu e-mail para contato! :)" class="enviar_email" id="enviar_email" size="64" maxLength="64">
-    <input type="button" value="ENVIAR" class="enviar_button" onclick="confirmarClique()"> 
+    <form method="post" name="enviar_email">
+
+      <input type="email" name="email" placeholder="Coloque seu e-mail para contato! :)" class="enviar_email" id="enviar_email" size="64" maxLength="64">
+      <input type="submit" name="submit" value="ENVIAR" class="enviar_button" onclick="return enviar_contato()"> 
+
+    </form>
 
   </footer>
 
